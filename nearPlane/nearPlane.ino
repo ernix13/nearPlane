@@ -62,6 +62,9 @@ void goToSleep();
 void drawClock();
 
 void setup() {
+  pinMode(4, output);
+  digtalWrite(4, HIGH);
+  
   auto cfg = M5.config();
   M5.begin(cfg);
   M5.Power.begin();

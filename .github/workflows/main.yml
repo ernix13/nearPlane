@@ -10,7 +10,6 @@ runs-on: ubuntu-latest
 steps:
 - name: Download source
 uses: actions/checkout@v4
-
 - name: Install PlatformIO
 run: |
 pip install platformio
